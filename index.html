@@ -861,19 +861,26 @@ Warning: No sales calls or scams allowed. You'll be deleted!
                     <p>📍 Address: [Portland OR]</p>
                     <p>🕒 Hours: [8 Am - 4 Pm]</p>
                 </div>
-                <form
-  action="https://formspree.io/f/mzzgvron"
-  method="POST"
->
+   <form action="https://formspree.io/f/mzzgvron" method="POST">
+  <label>
+    Your Name:
+    <input type="text" name="name" required>
+  </label>
   <label>
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" required>
   </label>
   <label>
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" required></textarea>
   </label>
-  <!-- your other form fields go here -->
+  
+  <!-- Optional: Custom subject line -->
+  <input type="hidden" name="_subject" value="New IT inquiry from website">
+  
+  <!-- Optional: Redirect to your own thank-you page -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+  
   <button type="submit">Send</button>
 </form>
             </div>
